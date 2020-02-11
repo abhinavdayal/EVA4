@@ -1,5 +1,11 @@
 # S4
 
+Answers to questions asked:
+* Batch Normalization is always a good practice to add because it emphasizes the features learned
+* Dropouts are necessary only if the gap between train and test is large. I tried without dropouts and then used a small dropout to close in the gap
+* 1x1 conv is used at the end to reduce the number if channels to 10.
+* GAP is used to flatten the channels before applying softmax
+
 ## Without drouputs
 Used Batch Normalization, No dropouts, Single maxpooling layer, a 1x1 conv at end to reduce to 10 channels and a GAP layer.
 
