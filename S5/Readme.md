@@ -2,6 +2,8 @@
 
 ## First Model
 
+[File Link](https://github.com/abhinavdayal/EVA4/blob/master/S5/EVA4_S5_01.ipynb)
+
 ### Observation
 * The input is mono and has very simple features. Probably we need not go beyond 16 channels.
 * We can do initial max pooling after we reach receptive field of 5x5
@@ -21,6 +23,8 @@
 
 ## Second Model
 
+[File Link](https://github.com/abhinavdayal/EVA4/blob/master/S5/EVA4_S5_02.ipynb)
+
 ### Target
 * Less than 20000 parameters
 * Less than 15 epochs
@@ -37,6 +41,8 @@
 * We also have to reduce parameters to meet the assignment goal
 
 ## Third Model
+
+[File Link](https://github.com/abhinavdayal/EVA4/blob/master/S5/EVA4_S5_03.ipynb)
 
 ### Target
 * Less than 10000 parameters
@@ -57,6 +63,8 @@
 
 ## Fourth Model
 
+[File Link](https://github.com/abhinavdayal/EVA4/blob/master/S5/EVA4_S5_04.ipynb)
+
 ### Target
 * Less than 10000 parameters
 * Less than 15 epochs
@@ -75,6 +83,8 @@
 
 ## Fifth Model
 
+[File Link](https://github.com/abhinavdayal/EVA4/blob/master/S5/EVA4_S5_05.ipynb)
+
 ### Target
 * Less than 8000 parameters
 * Less than 15 epochs
@@ -91,6 +101,8 @@
 * Can increase dropouts more to further bump up the challenge. We are happy to be below 8000. But we can try to push the model further.
 
 ## Bonus Model -- pushing the limits
+
+[File Link](https://github.com/abhinavdayal/EVA4/blob/master/S5/EVA4_S5_06.ipynb)
 
 ### Target
 * Less than 7000 parameters
