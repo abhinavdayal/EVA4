@@ -1,5 +1,12 @@
 # S5 Assignment Solution
 
+## Team Members
+* B Sridevi - sridevi.b@vishnu.edu.in
+* Abhinav Dayal - abhinav.dayal@vishnu.edu.in
+* A. Lakshmana Rao - 18pa1a0511@vishnu.edu.in
+* Sanjay Varma G - 18pa1a1211@vishnu.edu.in
+
+
 ## First Model
 
 [File Link](https://github.com/abhinavdayal/EVA4/blob/master/S5/EVA4_S5_01.ipynb)
