@@ -1,7 +1,16 @@
 # S6
 
-[Main jupiter notebook](EVA04_S6.ipynb)
-[visualizations](S6_Visualizations.ipynb)
+* [Main jupiter notebook](EVA04_S6.ipynb)
+* [visualizations](S6_Visualizations.ipynb)
+
+### Highlights
+* Refactored all parts in classes/functions so that it is easy to split them in files later
+* Used Google Drive to store best model and all the model stats so that visualzation can be done later separately
+* in misclassified images, actual label is in Green and predicted label is in Red
+
+### Observations
+* L1 and L2 regularizations reduced the train / test accuracy
+* Lambdas for L1/L2 must be small. For larger values the accuracy drops significantly.
 
 ## Without L1 and L2
 
