@@ -2,7 +2,7 @@
 
 ## Without L1 and L2
 
-## Misclassified images without any L1 or L2 regularization
+### Misclassified images without any L1 or L2 regularization
 ![Misclassified Images](s6model_0_0_misclassified.png)
 
 ## Only L2
@@ -54,3 +54,12 @@
 
 ### Comparision of validation Accuracy
 ![validation accuracies](Accuracy_L1L2Variations_best.png)
+
+## Large L1/L2 spoils
+
+### Large L2
+![validation losses](Bad_Validation_Loss_L2Variations.png)
+
+
+### Large L1
+![validation losses](Bad_Validation_Loss_L1Variations.png)
