@@ -8,3 +8,9 @@
 
 ## Misclassified images with L2 regularization using lambda = 0.00005
 ![Misclassified Images](s6model_0_5e-05_misclassified.png)
+
+## Comparision of validation loss using various L2 Lambdas (no L1)
+![validation losses](Validation_Loss_L2Variations.png)
+
+## Comparision of validation Accuracy using various L2 Lambdas (no L1)
+![validation accuracies](Accuracy_L2Variations.png)
