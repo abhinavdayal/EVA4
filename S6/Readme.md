@@ -46,3 +46,11 @@
 
 ### Comparision of validation Accuracy using various L1 and L2 Lambdas (no L1)
 ![validation accuracies](Accuracy_L1L2Variations.png)
+
+## Best in each of 4 categories
+
+### Comparision of validation loss
+![validation losses](Validation_Loss_L1L2Variations_best.png)
+
+### Comparision of validation Accuracy
+![validation accuracies](Accuracy_L1L2Variations_best.png)
