@@ -1,5 +1,8 @@
 # S6
 
+[Main jupiter notebook](EVA04_S6.ipynb)
+[visualizations](S6_Visualizations.ipynb)
+
 ## Without L1 and L2
 
 ### Misclassified images without any L1 or L2 regularization
