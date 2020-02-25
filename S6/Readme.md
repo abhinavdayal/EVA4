@@ -11,10 +11,10 @@
 ### Observations
 * L1 and L2 regularizations reduced the train / test accuracy
 * However, towards the end there is slight increase in accuracy with regularization. For example the best accuracy in 40 epocs for each were as follows:
-  * Without L1/L2 best accuracy = 0.54
-  * With L1 = 0.000001 and no L2, best accuracy =  0.57
-  * With No L1 and L2 = 0.000001, best accuracy = 0.59
-  * with both L1 and L2 = 0.000001, best accuracy = 0.54
+  * Without L1/L2 **best accuracy = 0.54**
+  * With L1 = 0.000001 and no L2, **best accuracy =  0.57**
+  * With No L1 and L2 = 0.000001, **best accuracy = 0.59**
+  * with both L1 and L2 = 0.000001, **best accuracy = 0.54**
 * Therefore, we can say that with regularization model starts to generalize better with more training.
 * Lambdas for L1/L2 must be small. For larger values the accuracy drops significantly. For example with L1,L2 in range 0.01 and above accuracies were < 20%
 
