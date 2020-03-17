@@ -11,3 +11,7 @@
 * added gradcam functionality
 * added Albumentation transforms
 
+
+# QuizDNN
+* we added a new model for the [QuizDNN](https://github.com/abhinavdayal/EVA4/blob/master/S9/EVA4/eva4models/QuizDNN.py) in our library and reran to get accuracy of 92.15% in 30 epochs.
+
