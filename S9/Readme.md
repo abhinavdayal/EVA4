@@ -6,7 +6,7 @@
 * We implemented Gradcam using help from [this library](https://github.com/kazuto1011/grad-cam-pytorch).
 * We tested gradcam with both cutout etc. and no transformations other than nortmalize. Results were interesting. In fact on some images it didnt predict well. And we visualize all 4 layer outputs of ResNet. Lots of learning.
 
-# changes to library
+# changes to library ([link](https://github.com/abhinavdayal/EVA4/tree/master/S9/EVA4))
 
 * added gradcam functionality
 * added Albumentation transforms
