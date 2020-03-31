@@ -5,7 +5,7 @@
 * Moved library to separate repository [here](https://github.com/abhinavdayal/EVA4_LIBRARY). 
 * Implemented LR Finder [here](https://github.com/abhinavdayal/EVA4_LIBRARY/blob/master/EVA4/eva4LRFinder.py).
 * used the best LR as starting point for LR Reduce on plateau with patience of 2
-* ran for 50 epochs using Resnet 18 model on CFAR10 with SGD, nexterov with momentum and L2 regularization of 0.0001
+* ran for 50 epochs using Resnet 18 model on CFAR10 with SGD, nexterov with momentum and L2 regularization of 0.0001. Got 92.47 accuracy in 49th Epoch.
 
 ## Learning Rate finder plot
 ![LRfinder](https://github.com/abhinavdayal/EVA4/blob/master/S10/images/LRRange.png)
