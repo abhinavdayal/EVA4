@@ -32,6 +32,7 @@
 * Found [best clusters here](https://github.com/abhinavdayal/EVA4/blob/master/S12/S12_YOLO_Anchor_Boxes.ipynb). 
 * Did standard kmeans and also custom kmeans with distance defined as 1 - IOU between cluster center and bbox
 * plotted centroid vs mean IOU as well as best anchor boxes
+* adjusted cluster membership according to highest IOU match rather than kmeans metric in sklearn method
 
 ![IOUplot](https://raw.githubusercontent.com/abhinavdayal/EVA4/master/S12/IOUplot.png)
 
