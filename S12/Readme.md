@@ -1,3 +1,6 @@
+```
+NOTE: This is original work. Since this is a submission towards a graded assignment for a course, I would like to mention that there are people who are copying from this one as it is. I hope such people learn the subject as well and not just do this for marks!
+```
 # S12
 
 ## Assignment A - First attempt
