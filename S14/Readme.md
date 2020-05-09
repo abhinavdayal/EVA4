@@ -55,6 +55,10 @@ To this effect we wrote a generator function to load the dataset at the same tim
 3. save depth images of 224x224 in zipfolder
 ```
 
+### Mask calculation
+We found that not all transparent images were precise. There were images with semi transparency round edges. So we took the transparency channel and made it in range 0 to 255. Then we set mask = 0 for transparency < 200 and mask = 1 for transparency >=200. This gave us good binary mask.
+
+### Stats calculation
 Ideally we could have calculated mean/stdev in our generator, but we **FORGOT** to do that, hence have to write another script to calculate the same.
 
 ## Links to ipynb files
