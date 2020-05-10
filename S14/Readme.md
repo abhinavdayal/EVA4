@@ -38,8 +38,13 @@
 
 ## Process of Image Generation
 
+### Foreground transparency
+We downloaded a lot of images that were already transparent png's. However several were pseudo png's i.e. the background was white. We used Photoshop's magic wand to select that region and make it transparent. However we were still short of 40+ images. We then downloaded several images of cows/calf/bull and used [remove.bg](https://www.remove.bg/) that uses a combination of Image based techniques and DNN to separate foreground from background. It gave very good results. However for several we still have to use lasso tool in Photoshop to make the foregrounds really stand out.
+
+### Depth Calculation
 We used nyu.h5 model for depth calcualtion from [dense depth](https://github.com/ialhashim/DenseDepth). This model requires input images to be of 448x448 resolution and produces 224x224 size depth image. We planned to run it with a batch of 1000.
 
+### Image Generator
 To this effect we wrote a generator function to load the dataset at the same time create fg-bg and mask images for each processed batch.
 
 ```
