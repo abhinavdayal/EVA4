@@ -103,6 +103,8 @@ Still, the process was nice and we would like to document the same.
 
 ![segmentation key](segmentationkey.png)
 
+Our initial BG images with degmentation and depths can be found [here](https://drive.google.com/open?id=1ucuNKFaWtEPgVSHaoVoDxcZDGXoDLLji).
+
 * We decided to use terrain, road and sidewalk regions only to place the foreground (cow).
 * we also calculated the last row where sky was present. We rejected all ground pixels above the sky
 * as a precaution we also hard limited sky to 50% of the height of image.
@@ -113,18 +115,23 @@ Still, the process was nice and we would like to document the same.
 1. Repeat 400K times
   1.1 Pick a bg image at random from 100 images
   1.2 pick a fg image at random from 100 images
-  1.3 We initially did not precrop bg images. We took liberty to crop 448x448 maximal region of original image.
+  1.3 crop 224x224 maximal region of original BG image.
   1.4 flip cropped image with probability of 0.5
   1.5 randomly pick center and based upon center Y coordinate interpolate the scale.
   1.6 resize fg and flip it with probability of 0.5
   1.7 place fg over bg
   1.8 save fg-bg and mask image
-  1.9 add 448x448 image for depth calcualtion to numpy array
-  
-2 calcualte depth as before
+  1.9 from corresponding depth image of BG crop and fglip same region. 
+  1.10 calcaulate depth value of foregroud pixels based on mask, scale and location and superimpose fg depth on bg cropped depth
+  1.11 save fg-bg depth image
 ```
 
 We however did not generate images and only ran few experiments.
+
+### Depth Hack (paused implemetation as strategy changed)
+Rather than running depth for every generated image whiich would have taken time, we created depth for each BG image. And since our placement of Foreground kind of intersects with the idea of depth, we plnned to calculate depth based on placement coordinates and scale and from the same cropped (and flipped) region of the depth image corresponsing to that of the selected background, we wanted to superimpose calculate foreground depth using the foreground mask. This would have given us data very fast
+
+**DOUBLE BONUS**: We thought that this way we never have to generate all the 400K images, but we can generate any amount of images on the fly with a custom generator as above code to generate the images.
 
 ### Promising Results
 
