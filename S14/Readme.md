@@ -14,6 +14,12 @@
 
 ## Statistics
 
+| Type of Image | Total | Mean | Standard Deviation |
+| --- | --- | --- | --- |
+| `fg_bg` | 400000 | . | . |
+| `mask` | 400000 | . | . |
+| `depth` | 400000 | . | . |
+
 ### Mean
 
 * fg_bg:  [0.51220781 0.52501565 0.50610626]
