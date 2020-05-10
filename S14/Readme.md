@@ -94,7 +94,7 @@ Ideally we could have calculated mean/stdev in our generator, but we **FORGOT** 
 
 ## Placement with Segmentation Experiment
 
-We initially thought that we should create realistic images, and our cows should be properly scaled and not flying in sky. To this end we spend almost one week. Later it was clarifid in last weeks session that we should not do that.
+We initially thought that we should create realistic images, and our cows should be properly scaled and not flying in sky. To this end we spent almost one week. Later it was clarifid in last weeks session that we should not do that. Moreover we are supposed to have fixed 100 bg images. In this experiment we are randomly cropping a square region of BG instead.
 
 Still, the process was nice and we would like to document the same.
 
