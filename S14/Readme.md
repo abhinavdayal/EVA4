@@ -113,7 +113,11 @@ We however did not generate images and only ran few experiments.
 
 ### Promising Results
 
+#### segmentation examples
+
 ![segmentations](segmentation.jpg)
+
+#### Generated image samples
 
 ![promising results](good.png)
 
