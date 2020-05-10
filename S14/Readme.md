@@ -57,13 +57,6 @@
 
 ![sample](sample.jpg)
 
-## Links to dataset
-**PLEASE UPDATE**
-* foreground images [here](https://drive.google.com/drive/u/0/folders/1ZXqTNZEx_oM2oBR-i6I99WeagOlO9DAv)
-* background images [here](https://drive.google.com/drive/u/0/folders/1yQG1D513ITs77rXNI0rVPcDCu0jmBvbT)
-* mask images [here](https://drive.google.com/drive/u/0/folders/1xiW7NI_85_WU2h6NIDCfEEGqdZT2Ujek)
-* zipfile for generated dataset [here](https://drive.google.com/drive/u/0/folders/1hNct_Y6FRKPxRsotnz6jaGbXkM9BiO2J)
-
 ## Process of Image Generation
 
 ### Background Images
