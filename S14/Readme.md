@@ -92,7 +92,7 @@ Ideally we could have calculated mean/stdev in our generator, but we **FORGOT** 
 * [Data generator](https://github.com/abhinavdayal/EVA4/blob/master/S14/Final_Data_Creation.ipynb)
 * [Statistics Calculator](https://github.com/abhinavdayal/EVA4/blob/master/S14/MeanandSD.ipynb)
 
-## Real time adaptive Placement with Segmentation Experiment
+# Real-time adaptive Placement with Segmentation Experiment
 
 We initially thought that we should create realistic images, and our cows should be properly scaled and not flying in sky. To this end we spent almost one week. Later it was clarifid in last weeks session that we should not do that. Moreover we are supposed to have fixed 100 bg images. In this experiment we are randomly cropping a square region of BG instead.
 
@@ -130,26 +130,26 @@ Our final code can be found [here](https://github.com/abhinavdayal/EVA4/blob/mas
 
 We however did not generate images and only ran few experiments.
 
-### Depth Hack (paused implemetation as strategy changed)
+## Depth Hack (paused implemetation as strategy changed)
 Rather than running depth for every generated image whiich would have taken time, we created depth for each BG image. And since our placement of Foreground kind of intersects with the idea of depth, we plnned to calculate depth based on placement coordinates and scale and from the same cropped (and flipped) region of the depth image corresponsing to that of the selected background, we wanted to superimpose calculate foreground depth using the foreground mask. This would have given us data very fast
 
 **DOUBLE BONUS**: We thought that this way we never have to generate all the 400K images, but we can generate any amount of images on the fly with a custom generator as above code to generate the images.
 
-### Promising Results
+## Promising Results
 
-#### segmentation examples
+### segmentation examples
 
 ![segmentations](segmentation.jpg)
 
-#### Generated image samples
+### Generated image samples
 
 ![promising results](good.png)
 
-### Results that were not good
+## Results that were not good
 
 ![not good results](notgood.png)
 
-### Bonus: Occlusion detection
+## Bonus: Occlusion detection
 We tried to detect occlusion by taking pixels from segmentation of person or vehicle that has its start from after the Y coordinate of fg placement. The third and fourth image below describe how it worked. But the accuracy was not as good in all cases as the segmentation map was noisy.
 
 ![bonus](attempt.jpg)
