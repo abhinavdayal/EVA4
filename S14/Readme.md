@@ -14,15 +14,14 @@
 
 ## Dataset
 
-## Links to dataset
+### Links to dataset
+* foreground images [here](https://drive.google.com/drive/folders/1ZXqTNZEx_oM2oBR-i6I99WeagOlO9DAv?usp=sharing)
+* background images [here](https://drive.google.com/drive/folders/1yQG1D513ITs77rXNI0rVPcDCu0jmBvbT?usp=sharing)
+* mask images [here](https://drive.google.com/drive/folders/1xiW7NI_85_WU2h6NIDCfEEGqdZT2Ujek?usp=sharing)
+* zipfile for generated dataset [here](https://drive.google.com/file/d/1E4tZL5sq66RwGTzfAv3iws-gJDgwOLvM/view?usp=sharing)
 
-* fg images 
-* bg images
-* mask images
-* zipfile for generated dataset
 
-* Drive
-* Top-level layout of the dataset (Directory Structure)
+###  Top-level layout of the dataset (Directory Structure)
 ```
 |---custom_data
     |---bgimages                  # contains 100 background images
@@ -47,11 +46,6 @@
 
 ![sample](sample.jpg)
 
-## Links to dataset
-* foreground images [here](https://drive.google.com/drive/folders/1ZXqTNZEx_oM2oBR-i6I99WeagOlO9DAv?usp=sharing)
-* background images [here](https://drive.google.com/drive/folders/1yQG1D513ITs77rXNI0rVPcDCu0jmBvbT?usp=sharing)
-* mask images [here](https://drive.google.com/drive/folders/1xiW7NI_85_WU2h6NIDCfEEGqdZT2Ujek?usp=sharing)
-* zipfile for generated dataset [here](https://drive.google.com/file/d/1E4tZL5sq66RwGTzfAv3iws-gJDgwOLvM/view?usp=sharing)
 
 ## Process of Image Generation
 
