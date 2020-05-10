@@ -101,7 +101,7 @@ Still, the process was nice and we would like to document the same.
 1. Repeat 400K times
   1.1 Pick a bg image at random from 100 images
   1.2 pick a fg image at random from 100 images
-  1.3 randomly crop (as in previous section algo.) 448x448 region of bg
+  1.3 We initially did not precrop bg images. We took liberty to crop 448x448 maximal region of original image.
   1.4 flip cropped image with probability of 0.5
   1.5 randomly pick center and based upon center Y coordinate interpolate the scale.
   1.6 resize fg and flip it with probability of 0.5
