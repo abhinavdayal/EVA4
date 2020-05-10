@@ -15,7 +15,7 @@
 ## Dataset
 
 * Drive
-* Directory Structure
+* Top-level layout of the dataset (Directory Structure)
 ```
 |---custom_data
     |---bgimages                  # contains 100 background images
