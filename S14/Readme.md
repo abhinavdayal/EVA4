@@ -108,7 +108,7 @@ Our initial BG images with degmentation and depths can be found [here](https://d
 * We decided to use terrain, road and sidewalk regions only to place the foreground (cow).
 * we also calculated the last row where sky was present. We rejected all ground pixels above the sky
 * as a precaution we also hard limited sky to 50% of the height of image.
-* We observed that our background images are all different in terms of camera parameters but they were all perspective projections from a person on ground view mostly. So we manually wrote a scaling factor (*ADAPTIVE SCALING*) for each background suggesting a linear interpolation from a large scale at bottom to a smaller scale at horizon. By scale we mean the fraction of area of background that a foreground image must occupy.
+* We observed that our background images are all different in terms of camera parameters but they were all perspective projections from a person on ground view mostly. So we manually wrote a scaling factor (*ADAPTIVE SCALING*) for each background suggesting a linear interpolation from a large scale at bottom to a smaller scale at horizon. By scale we mean the fraction of area of background that a foreground image must occupy. [Here](https://drive.google.com/open?id=1ILVEydlrXIJ0H6q74fedP7PfUi2X5tXD) is the scale file.
 * That is it! Our initial algorithm was simple:
 
 ```
