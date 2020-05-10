@@ -37,7 +37,7 @@
 
 | Type of Image | Total | Mean | Standard Deviation |
 | :---: | --- | --- | --- |
-| `fg_bg` | 400000 | (0.51219183,0.5250236,0.50610699 ) | (  0.24747186,0.24801724 ,0.28525343,) |
+| `fg_bg` | 400000 | ( 0.50610699, 0.5250236, 0.51219183 ) | ( 0.28525343, 0.24801724, 0.24747186 ) |
 | `mask` | 400000 | ( 0.13532567, ) | ( 0.33999708, )  |
 | `depth` | 400000 | ( 0.57016144, ) | ( 0.25914387, ) |
 
@@ -85,7 +85,7 @@ INPUT bg image, list of fg images
 We found that not all transparent images were precise. There were images with semi transparency round edges. So we took the transparency channel and made it in range 0 to 255. Then we set mask = 0 for transparency < 200 and mask = 1 for transparency >=200. This gave us good binary mask.
 
 ### Stats calculation
-Ideally we could have calculated mean/stdev in our generator, but we **FORGOT** to do that, hence have to write another script to calculate the same.
+Ideally we could have calculated mean/stdev in our generator, but we **FORGOT** to do that, hence have to write another script to calculate the same. We used inceremental mean / standard deviation calculation after normalizing the image to 0,1 range. This way we did not exceed the float limits for 400K images.
 
 ## Links to ipynb files
 
