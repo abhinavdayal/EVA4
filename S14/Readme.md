@@ -50,7 +50,8 @@ We used nyu.h5 model for depth calcualtion from [dense depth](https://github.com
 ### FG-BG Image Generation
 We planned to pass 2000 images in a single batch to the Depth image generator. Since 1 background will have 2000 images with 100 foregrouds (each 20 times) and another 2000 for same foreground images flipped, we ran the batch twice, second time with foregrounds flipped.
 
-Below is the process for one batch
+Below is the process for one batch. 
+**NOTE**: We did not separately save corresponding bg, since the way we processed the image, from the image number we can determing the bg image number that we used.
 
 ```
 INPUT bg image, list of fg images
