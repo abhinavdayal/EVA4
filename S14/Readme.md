@@ -36,6 +36,13 @@
 
 ![sample](sample.jpg)
 
+## Links to dataset
+**PLEASE UPDATE**
+* fg images
+* bg images
+* mask images
+* zipfile for generated dataset
+
 ## Process of Image Generation
 
 ### Background Images
