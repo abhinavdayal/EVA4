@@ -12,6 +12,21 @@
 * Total size is 6GB zipped and 8GB unzipped with each image approximately 7KB, each mask/depth approx 2KB. 
 * While images are jpeg RGB with 60% quality, mask is binary and depth is grayscale image (both jpgs again with 60% quality).
 
+## Dataset
+
+* Drive
+* Directory Structure
+```
+|---custom_data
+    |---bgimages                  # contains 100 background images
+    |---foreground                # contains 100 foreground png imags and images produced by flipping them (200)
+    |---masks                     # contains 200 masks for the above foreground images
+    |---output
+        |---fgbg                  # 400000 images produced by overlaying every fg 20 times on bg                 
+        |---masks                 # 400000 respective masks of the fgbg images
+        |---masks                 # 400000 respective depth images of fgbg images
+```
+
 ## Statistics
 
 | Type of Image | Total | Mean | Standard Deviation |
