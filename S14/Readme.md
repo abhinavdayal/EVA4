@@ -14,6 +14,13 @@
 
 ## Dataset
 
+## Links to dataset
+
+* fg images 
+* bg images
+* mask images
+* zipfile for generated dataset
+
 * Drive
 * Top-level layout of the dataset (Directory Structure)
 ```
@@ -53,10 +60,10 @@
 
 ## Links to dataset
 **PLEASE UPDATE**
-* fg images
-* bg images
-* mask images
-* zipfile for generated dataset
+* foreground images [here](https://drive.google.com/drive/u/0/folders/1ZXqTNZEx_oM2oBR-i6I99WeagOlO9DAv)
+* background images [here](https://drive.google.com/drive/u/0/folders/1yQG1D513ITs77rXNI0rVPcDCu0jmBvbT)
+* mask images [here](https://drive.google.com/drive/u/0/folders/1xiW7NI_85_WU2h6NIDCfEEGqdZT2Ujek)
+* zipfile for generated dataset [here](https://drive.google.com/drive/u/0/folders/1hNct_Y6FRKPxRsotnz6jaGbXkM9BiO2J)
 
 ## Process of Image Generation
 
