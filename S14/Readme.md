@@ -92,7 +92,7 @@ Ideally we could have calculated mean/stdev in our generator, but we **FORGOT** 
 * [Data generator](https://github.com/abhinavdayal/EVA4/blob/master/S14/Final_Data_Creation.ipynb)
 * [Statistics Calculator](https://github.com/abhinavdayal/EVA4/blob/master/S14/MeanandSD.ipynb)
 
-## Placement with Segmentation Experiment
+## Real time adaptive Placement with Segmentation Experiment
 
 We initially thought that we should create realistic images, and our cows should be properly scaled and not flying in sky. To this end we spent almost one week. Later it was clarifid in last weeks session that we should not do that. Moreover we are supposed to have fixed 100 bg images. In this experiment we are randomly cropping a square region of BG instead.
 
