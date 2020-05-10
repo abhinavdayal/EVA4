@@ -103,7 +103,7 @@ Still, the process was nice and we would like to document the same.
 
 ![segmentation key](segmentationkey.png)
 
-Our initial BG images with degmentation and depths can be found [here](https://drive.google.com/open?id=1ucuNKFaWtEPgVSHaoVoDxcZDGXoDLLji).
+Our initial BG images with degmentation and depths can be found [here](https://drive.google.com/open?id=1ZLqkr_oY4xGK-Vhdvjr_BLGVEewcEsi3).
 
 * We decided to use terrain, road and sidewalk regions only to place the foreground (cow).
 * we also calculated the last row where sky was present. We rejected all ground pixels above the sky
