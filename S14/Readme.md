@@ -38,29 +38,32 @@
 
 ## Process of Image Generation
 
-### Foreground transparency
+### Background Images
+We downloaded 100 images of background of streets, roads, and landscapes. We did a maximal random crop of 448x448 without affecting the image aspect.
+
+### Foreground Images
 We downloaded a lot of images that were already transparent png's. However several were pseudo png's i.e. the background was white. We used Photoshop's magic wand to select that region and make it transparent. However we were still short of 40+ images. We then downloaded several images of cows/calf/bull and used [remove.bg](https://www.remove.bg/) that uses a combination of Image based techniques and DNN to separate foreground from background. It gave very good results. However for several we still have to use lasso tool in Photoshop to make the foregrounds really stand out.
 
 ### Depth Calculation
 We used nyu.h5 model for depth calcualtion from [dense depth](https://github.com/ialhashim/DenseDepth). This model requires input images to be of 448x448 resolution and produces 224x224 size depth image. We planned to run it with a batch of 1000.
 
-### Image Generator
-To this effect we wrote a generator function to load the dataset at the same time create fg-bg and mask images for each processed batch.
+### FG-BG Image Generation
+We planned to pass 2000 images in a single batch to the Depth image generator. Since 1 background will have 2000 images with 100 foregrouds (each 20 times) and another 2000 for same foreground images flipped, we ran the batch twice, second time with foregrounds flipped.
+
+Below is the process for one batch
 
 ```
-1. for each background Image (100 of those, each of landscape orientation)
-  1.1 resize background to (448*w/h)x448, where w and  is width and height of the background image
-  1.2 for each foreground (original and flipped, 200 of those)
-    1.2.1 repeat 20 times
-      1. crop randomly 448x448 region of the resized background
-      2. randomly pick a center point on image (two numbers in range 0 to 447 for x, y)
-      3. randomly pick a scale between .3 and .6 indicating how much square area should fg overlap on bg
-      4. resize the fg to scale and place it on top of bg centered at x, y calculated
-      5. save it at 224x224 resolution in a zip folder
-      6. calculate mask by setting a binary image to transparency channel of fg image, with trasparent = 0 amd non transparent=1
-      7. save mask at 224x224 resolution
-      8. add 448x448 image to numpy array for depth calculation
-  1.3 if 100 images generated then yield the batch
+INPUT bg image, list of fg images
+1 for each foreground in list
+  1.1 repeat 20 times
+    1.1.1. randomly pick a center point on image (two numbers in range 0 to 447 for x, y)
+    1.1.2. randomly pick a scale between .3 and .6 indicating how much square area should fg overlap on bg
+    1.1.3. resize the fg to scale and place it on top of bg centered at x, y calculated
+    1.1.4. save it at 224x224 resolution in a zip folder
+    1.1.5. calculate mask by setting a binary image to transparency channel of fg image, with trasparent = 0 amd non transparent=1
+    1.1.6. save mask at 224x224 resolution
+    1.1.7. add 448x448 image to numpy array for depth calculation
+1.3 if 100 images generated then yield the batch
   
 2. run depth for one batch
 3. save depth images of 224x224 in zipfolder
@@ -74,8 +77,8 @@ Ideally we could have calculated mean/stdev in our generator, but we **FORGOT** 
 
 ## Links to ipynb files
 
-* [Data generator](https://...)
-* [Statistics Calculator](https://...)
+* [Data generator](https://github.com/abhinavdayal/EVA4/blob/master/S14/Final_Data_Creation.ipynb)
+* [Statistics Calculator](https://github.com/abhinavdayal/EVA4/blob/master/S14/MeanandSD.ipynb)
 
 ## Placement with Segmentation Experiment
 
