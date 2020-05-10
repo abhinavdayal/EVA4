@@ -14,15 +14,14 @@
 
 ## Dataset
 
-## Links to dataset
+### Links to dataset
 
 * foreground [images](https://drive.google.com/drive/u/0/folders/1ZXqTNZEx_oM2oBR-i6I99WeagOlO9DAv) 
 * background [images](https://drive.google.com/drive/u/0/folders/1yQG1D513ITs77rXNI0rVPcDCu0jmBvbT)
 * mask [images](https://drive.google.com/drive/u/0/folders/1xiW7NI_85_WU2h6NIDCfEEGqdZT2Ujek)
 * [zipfile](https://drive.google.com/drive/u/0/folders/1yQG1D513ITs77rXNI0rVPcDCu0jmBvbT) for generated dataset
 
-* Drive
-* Top-level layout of the dataset (Directory Structure)
+### Top-level layout of the dataset (Directory Structure)
 ```
 |---custom_data
     |---bgimages                  # contains 100 background images
