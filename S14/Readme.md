@@ -1,4 +1,4 @@
-# S14/15A - Data Preparation
+# QuMaDe
 
 ## Kinds of images and total counts
 
